@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #CCB5AD;
+    background-color: #a9ba5e;
     padding-top: 60px;
 }
 
@@ -56,9 +56,9 @@ h2 {
 .home-text{
     max-width: 600px;
     margin: 0 auto 20px auto;
-    text-align: left;
+    text-align: center;
     padding: 10px 20px;
-    background-color: #9c6916;
+    background-color: #f6d693;
     border-radius: 8px;
 }
 /* Navigation bar styling */
