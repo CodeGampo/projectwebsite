@@ -11,10 +11,13 @@
         <ul>
     <li><a href="home.html">Home</a></li>
     <li><a href="profile.html">Profile</a></li>
-    <li><a href="dashboard.html">Dashboard</a></li>
+    <li><a href="dashboard.html" class="active">Dashboard</a></li>
     <li><a href="faq.html">FAQ</a></li>
     <li><a href="blog.html">Blog</a></li>
         </ul>
+        <a href="https://hz.nl/" class="nav-logo" target="_blank">
+            <img src="hz-university-of-applied-sciences.png" alt="HZ University of Applied Sciences logo">
+            </a>
     </nav>
     <header>
         <h1>Dashboard</h1>
@@ -178,9 +181,9 @@
 
                     if (grade >= 5.5) {
                         achievedCredits += credits;
-                        row.style.backgroundColor = '#428f28'; 
+                        row.style.backgroundColor = '#428f28'; /* green*/
                     } else if (grade > 0) {
-                        row.style.backgroundColor = '#f8d7da'; 
+                        row.style.backgroundColor = '#b20606'; /* red */
                     } else {
                         row.style.backgroundColor = ''; 
                     }
