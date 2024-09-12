@@ -1,40 +1,110 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    background-color: #CCB5AD;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-main{
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #CCB5AD;
+    padding-top: 60px;
+}
+
+/* Main content styling */
+main {
+    text-align: center;
+    flex: 1;
     margin: 0 auto;
     width: 80%;
     padding: 20px;
 }
-.header{
+
+/* Header styling */
+.header {
     background-color: #f4f4f4;
     color: #b93131;
     text-align: center;
     padding: 1em;
 }
-h1{
-    text-align: center;
+/* IMG styling */
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;   
+    margin: 40px auto;
+    
+
 }
-.navigation-bar ul{
+/* H1 styling */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 10px;
+}
+.home-text{
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+    padding: 10px 20px;
+    background-color: #9c6916;
+    border-radius: 8px;
+}
+/* Navigation bar styling */
+.navigation-bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #13294b;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000; 
 }
-.navigation-bar a{
+
+/* Navigation bar links styling */
+.navigation-bar a {
     color: #f4f4f4;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center;
 }
-.navigation-bar a:hover{
+
+/* Navigation bar links hover effect */
+.navigation-bar a:hover {
     background-color: #b93131;
 }
-.navigation-bar li{
+
+/* Navigation bar list items styling */
+.navigation-bar li {
     float: left;
+}
+
+/* Footer styling */
+footer {
+    background-color: #13294b;
+    color: #f4f4f4;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Footer author text styling */
+.footer-author {
+    text-align: right;
+    margin: 0;
 }
