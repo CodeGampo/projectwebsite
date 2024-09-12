@@ -1,19 +1,28 @@
+/* Reset CSS, compatibility */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 /* Body styling */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #a9ba5e;
     padding-top: 60px;
 }
-
 /* Main content styling */
 main {
     text-align: center;
@@ -22,7 +31,6 @@ main {
     width: 80%;
     padding: 20px;
 }
-
 /* Header styling */
 .header {
     background-color: #f4f4f4;
@@ -37,8 +45,6 @@ img{
     padding: 5px;
     width: 350px;   
     margin: 40px auto;
-    
-
 }
 /* H1 styling */
 h1 {
@@ -46,13 +52,13 @@ h1 {
     font-size: 3em;
     margin: 0;
 
-}
+}/* H2 styling */
 h2 {
     text-align: center;
     font-size: 2em;
     margin: 0;
     padding: 10px;
-}
+}/*Home page text styling */
 .home-text{
     max-width: 600px;
     margin: 0 auto 20px auto;
@@ -60,6 +66,85 @@ h2 {
     padding: 10px 20px;
     background-color: #f6d693;
     border-radius: 8px;
+}
+/*Profile page text styling */
+.profile-text{
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f6d693;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px #000000; 
+}
+/*Top 5 lists styling */
+.list-container{
+    display: inline-block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.list-wrapper{
+    margin: 20px;
+    padding: 20px;
+    background-color: #f6d693;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px #000000;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+ol.listfood li, ol.listplaces li, ol.listgames li {
+    padding: 10px; 
+    margin-bottom: 10px; 
+    background-color: #c7a867;
+    border: 1px solid #ddd; /
+    border-radius: 4px; 
+    box-shadow: 0 1px 3px #000000; 
+    text-align: center; /
+}
+/*FAQ page text styling */
+.faq-item{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f6d693;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px #000000;
+    text-align: left;
+    max-width: 800px;
+}
+faq-question{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+faq-answer{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+/*Blog page text styling */
+.blog-post{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f6d693;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #000000;
+    text-align: left;
+    max-width: 1200px;
+}
+.blog-title{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.blog-date{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.blog-content{
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 /* Navigation bar styling */
 .navigation-bar {
@@ -73,7 +158,6 @@ h2 {
     width: 100%; 
     z-index: 1000; 
 }
-
 /* Navigation bar links styling */
 .navigation-bar a {
     color: #f4f4f4;
@@ -132,15 +216,23 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #c20000;
 }
-/* Compatability */
-@media (max-width: 768px) {
-    table, th, td }{
-        font-size: 14px;
-        padding: 10px;
-    }
-    header h1 {
-        font-size: 1.5em;
-    }
+.completion-checkbox{
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+.grade-input{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.4em;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+}
 /* Footer styling */
 .footer {
     background-color: #13294b;
@@ -173,4 +265,4 @@ progress::-webkit-progress-value {
 }
 progress::-moz-progress-bar {
     background-color: #007BFF;
-    border-radius: 5px;
+    border-radius: 5px;}
