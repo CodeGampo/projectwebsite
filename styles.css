@@ -4,7 +4,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+body,
+html {
     height: 100%;
     font-family: Helvetica, sans-serif;
 }
@@ -45,10 +46,11 @@ h2 {
     text-align: center;
     font-size: 2em;
     padding: 3%;
-}/*Home page text styling */
-.home-text{
+}
+/*Home page text styling */
+.home-text {
     max-width: 600px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 20px;
     padding: 10px 20px;
     background-color: #f6d693;
     border-radius: 8%;
@@ -71,25 +73,25 @@ h2 {
     padding: 1%;
     border-radius: 5%;
     box-shadow: 0 6px 12px #000000;
-    
+
 }
 /*Profile page text styling */
-.profile-text{
+.profile-text {
     max-width: 600px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 20px;
     padding: 10px 20px;
     background-color: #f6d693;
     border-radius: 8px;
-    box-shadow: 0 6px 12px #000000; 
+    box-shadow: 0 6px 12px #000000;
 }
 /*Top 5 lists styling */
-.list-container{
+.list-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
-.list-wrapper{
+.list-wrapper {
     margin: 5%;
     padding: 2%;
     background-color: #f6d693;
@@ -98,17 +100,20 @@ h2 {
     flex: 1 1 20%;
     max-width: 25%;
 }
-ol.listfood li, ol.listplaces li, ol.listgames li {
-    padding: 2%; 
-    margin-bottom: 2%; 
+ol.listfood li,
+ol.listgames li,
+ol.listplaces li {
+    padding: 2%;
+    margin-bottom: 2%;
     background-color: #c7a867;
-    border: solid #837353;; 
-    border-radius: 50%; 
-    box-shadow: 0 1px 3px #000000; 
-    text-align: center; /
+    border: solid #837353;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px #000000;
+    text-align: center;
+    /;
 }
 /*FAQ page text styling */
-.faq-item{
+.faq-item {
     margin: 5% auto;
     padding: 5%;
     margin-bottom: 7%;
@@ -118,17 +123,17 @@ ol.listfood li, ol.listplaces li, ol.listgames li {
     text-align: left;
     max-width: 90%;
 }
-.faq-question{
+.faq-question {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 5%;
 }
-.faq-answer{
+.faq-answer {
     font-size: 1.2em;
     margin-bottom: 5%;
 }
 /*Blog page text styling */
-.blog-post{
+.blog-post {
     margin: 3% auto;
     padding: 3%;
     background-color: #f6d693;
@@ -136,40 +141,40 @@ ol.listfood li, ol.listplaces li, ol.listgames li {
     box-shadow: 0 2px 6px #000000;
     text-align: left;
 }
-.blog-post-1{
+.blog-post-1 {
     min-width: 70%;
     max-width: 100%;
 }
-.blog-post-2{
+.blog-post-2 {
     min-width: 70%;
     max-width: 80%;
 }
-.blog-post-3{
+.blog-post-3 {
     min-width: 70%;
     max-width: 95%;
 }
-.blog-post-4{
+.blog-post-4 {
     min-width: 70%;
     max-width: 100%;
 }
-.blog-post-5{
+.blog-post-5 {
     min-width: 70%;
     max-width: 70%;
 }
-.blog-title{
+.blog-title {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 3%;
 }
-.blog-date{
+.blog-date {
     font-size: 1.2em;
     margin-bottom: 2%;
 }
-.blog-content{
+.blog-content {
     font-size: 1.2em;
     margin-bottom: 2%;
 }
-.blog-container{
+.blog-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -183,8 +188,8 @@ ol.listfood li, ol.listplaces li, ol.listgames li {
     background-color: #13294b;
     position: fixed;
     top: 0;
-    width: 100%; 
-    z-index: 1000; 
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -240,11 +245,14 @@ table {
     background-color: #f4f4f4;
 }
 
-table, th, td {
+table,
+td,
+th {
     border: 1px solid #000000;
 }
 
-th, td {
+td,
+th {
     padding: 1.5%;
     text-align: left;
 }
@@ -261,14 +269,14 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #c20000;
 }
-.completion-checkbox{
+.completion-checkbox {
     margin: auto;
     display: block;
     text-align: center;
     width: 20px;
     height: 20px;
 }
-.grade-input{
+.grade-input {
     width: 50px;
     height: 20px;
     text-align: center;
@@ -284,8 +292,8 @@ tr:hover {
     bottom: 0;
     width: 100%;
     background-color: #13294b;
-    color: #f4f4f4;;
-    padding: .5%;
+    color: #f4f4f4;
+    padding: 0.5%;
     z-index: 1000;
 }
 /* Progress bar styling */
