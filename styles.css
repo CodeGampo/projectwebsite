@@ -88,7 +88,6 @@ h2 {
 .list-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
 .list-wrapper {
@@ -110,7 +109,6 @@ ol.listplaces li {
     border-radius: 50%;
     box-shadow: 0 1px 3px #000000;
     text-align: center;
-    /;
 }
 /*FAQ page text styling */
 .faq-item {
