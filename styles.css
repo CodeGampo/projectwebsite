@@ -181,6 +181,7 @@ faq-answer{
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    max-height:7%;
 }
 .navigation-bar ul {
     display: flex;
@@ -212,9 +213,9 @@ faq-answer{
 }
 /* Navigation bar logo styling and size */
 .nav-logo {
-    width: 200px;
-    height: 75px;
-    margin-left: 20px;
+    float: right;
+    width: 10%;
+    height: auto;
 }
 /* Container for the content */
 .container {
