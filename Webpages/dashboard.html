@@ -164,54 +164,54 @@
             const nbsaBoundary = 45; 
             let totalCredits = 42.5; 
 
-            gradeInputs.forEach(input => {
-                input.addEventListener('input', updateProgress);
-            });
-
-            completionCheckboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', updateProgress);
-            });
-
-            function updateProgress() {
-                let achievedCredits = 0;
-
                 gradeInputs.forEach(input => {
-                    const grade = parseFloat(input.value);
-                    const credits = parseFloat(input.closest('tr').children[2].textContent);
-                    const row = input.closest('tr');
-
-                    if (grade >= 5.5) {
-                        achievedCredits += credits;
-                        row.style.backgroundColor = '#428f28'; /* green*/
-                    } else if (grade > 0) {
-                        row.style.backgroundColor = '#b20606'; /* red */
-                    } else {
-                        row.style.backgroundColor = ''; 
-                    }
+                    input.addEventListener('input', updateProgress);
                 });
 
                 completionCheckboxes.forEach(checkbox => {
-                    const credits = parseFloat(checkbox.closest('tr').children[2].textContent);
-                    const row = checkbox.closest('tr');
-
-                    if (checkbox.checked) {
-                        achievedCredits += credits;
-                        row.style.backgroundColor = '#f4f4f4'; /*white */
-                        row.style.backgroundColor = '#428f28'; /* green */
-                    } else {
-                        row.style.backgroundColor = ''; 
-                    }
+                    checkbox.addEventListener('change', updateProgress);
                 });
-                progressBar.value = achievedCredits;
-                progressText.textContent = `${achievedCredits}/60 EC`;
 
-                if (achievedCredits >= nbsaBoundary) {
-                    progressText.style.color = '#428f28'; /* green */
-                } else {
-                    progressText.style.color = '#B80000'; /* red */
+                function updateProgress() {
+                    let achievedCredits = 0;
+
+                    gradeInputs.forEach(input => {
+                        const grade = parseFloat(input.value);
+                        const credits = parseFloat(input.closest('tr').children[2].textContent);
+                        const row = input.closest('tr');
+
+                        if (grade >= 5.5) {
+                            achievedCredits += credits;
+                            row.style.backgroundColor = '#428f28';/* green*/
+                        } else if (grade > 0) {
+                            row.style.backgroundColor = '#b20606';/* red */
+                        } else {
+                            row.style.backgroundColor = '';
+                        }
+                    });
+
+                    completionCheckboxes.forEach(checkbox => {
+                        const credits = parseFloat(checkbox.closest('tr').children[2].textContent);
+                        const row = checkbox.closest('tr');
+
+                        if (checkbox.checked) {
+                            achievedCredits += credits;
+                            row.style.backgroundColor = '#f4f4f4';/* White */
+                            row.style.backgroundColor = '#428f28';/* Green */
+                        } else {
+                            row.style.backgroundColor = '';
+                        }
+                    });
+                    progressBar.value = achievedCredits;
+                    progressText.textContent = `${achievedCredits}/60 EC`;
+
+                    if (achievedCredits >= nbsaBoundary) {
+                        progressText.style.color = '#428f28';/* Green  */
+                    } else {
+                        progressText.style.color = '#B80000';/* Red */
+                    }
                 }
-            }
-        });
-    </script>
-</body>
+            });
+        </script>
+    </body>
 </html>

@@ -1,0 +1,318 @@
+/* Reset CSS, compatibility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* Body styling */
+body {
+    line-height: 1.6;
+    font-family: Helvetica, sans-serif;
+    background-color: #a9ba5e;
+}
+/* Main content styling */
+main {
+    text-align: center;
+    flex: 1;
+    margin: 0 auto;
+    width: 80%;
+    padding: 2%;
+    font-family: Helvetica, sans-serif;
+}
+/* Header styling */
+.header {
+    background-color: #f4f4f4;
+    color: #b93131;
+    text-align: center;
+}
+/* H1 styling */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 7%;
+}
+/* H2 styling */
+h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 3%;
+}
+/*Home page text styling */
+.home-text {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #f6d693;
+    border-radius: 8%;
+    box-shadow: 0 6px 12px #000000;
+}
+/*Profile photo styling */
+.profile-photo {
+    max-width: 55%;
+    max-height: 55%;
+    margin: auto;
+    padding: 0.5%;
+    border-radius: 5%;
+    box-shadow: 0 3px 12px #000000;
+}
+/*Building photo styling */
+.building-photo {
+    margin: 5% auto;
+    width: 70%;
+    height: auto;
+    padding: 1%;
+    border-radius: 5%;
+    box-shadow: 0 6px 12px #000000;
+
+}
+/*Profile page text styling */
+.profile-text {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #f6d693;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px #000000;
+}
+/*Top 5 lists styling */
+.list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.list-wrapper {
+    margin: 5%;
+    padding: 2%;
+    background-color: #f6d693;
+    border-radius: 4%;
+    box-shadow: 0 6px 12px #000000;
+    flex: 1 1 20%;
+    max-width: 25%;
+}
+ol.listfood li,
+ol.listgames li,
+ol.listplaces li {
+    padding: 2%;
+    margin-bottom: 2%;
+    background-color: #c7a867;
+    border: solid #837353;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px #000000;
+    text-align: center;
+}
+/*FAQ page text styling */
+.faq-item {
+    margin: 5% auto;
+    padding: 5%;
+    margin-bottom: 7%;
+    background-color: #f6d693;
+    border-radius: 7.5%;
+    box-shadow: 0 6px 12px #000000;
+    text-align: left;
+    max-width: 90%;
+}
+.faq-question {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.faq-answer {
+    font-size: 1.2em;
+    margin-bottom: 5%;
+}
+/*Blog page text styling */
+.blog-post {
+    margin: 3% auto;
+    padding: 3%;
+    background-color: #f6d693;
+    border-radius: 7.5%;
+    box-shadow: 0 2px 6px #000000;
+    text-align: left;
+}
+.blog-post-1 {
+    min-width: 70%;
+    max-width: 100%;
+}
+.blog-post-2 {
+    min-width: 70%;
+    max-width: 80%;
+}
+.blog-post-3 {
+    min-width: 70%;
+    max-width: 95%;
+}
+.blog-post-4 {
+    min-width: 70%;
+    max-width: 100%;
+}
+.blog-post-5 {
+    min-width: 70%;
+    max-width: 70%;
+}
+.blog-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+.blog-date {
+    font-size: 1.2em;
+    margin-bottom: 2%;
+}
+.blog-content {
+    font-size: 1.2em;
+    margin-bottom: 2%;
+}
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+    max-width: 100%;
+}
+/* Navigation bar styling */
+.navigation-bar {
+    overflow: hidden;
+    background-color: #13294b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-bar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+/* Navigation bar links styling */
+.navigation-bar a {
+    color: #f4f4f4;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+/* Navigation bar links hover effect */
+.navigation-bar a:hover {
+    background-color: #b93131;
+}
+/* Navigation bar active link styling */
+.navigation-bar a.active {
+    background-color: #b93131;
+    color: #f4f4f4;
+}
+/* Navigation bar list items styling */
+.navigation-bar li {
+    padding: 10px;
+}
+/* Navigation bar logo styling and size */
+.nav-logo {
+    width: 20%;
+    height: 10%;
+    margin-right: 2%;
+}
+/* Container for the content */
+.container-dashboard {
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+/* Styling for semester sections */
+.semester {
+    margin-top: 5%;
+}
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5%;
+    box-shadow: 0 2px 10px #000000;
+    background-color: #f4f4f4;
+}
+
+table,
+td,
+th {
+    border: 1px solid #000000;
+}
+
+td,
+th {
+    padding: 1.5%;
+    text-align: left;
+}
+
+th {
+    background-color: #e18d4c;
+    color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #c20000;
+}
+.completion-checkbox {
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+}
+.grade-input {
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid #000000;
+    border-radius: 10%;
+    margin: auto;
+    display: block;
+}
+/* Footer styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #13294b;
+    color: #f4f4f4;
+    padding: 0.5%;
+    z-index: 1000;
+}
+/* Progress bar styling */
+progress {
+    width: 100%;
+    height: 45px;
+}
+.progress-text {
+    font-size: 2.5em;
+    color: #007BFF;
+}
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px #000000;
+}
+progress::-webkit-progress-value {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+progress::-moz-progress-bar {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
