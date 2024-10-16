@@ -12,15 +12,13 @@
     max-width: 55%;
     max-height: 55%;
     margin: auto;
-    padding: 0.5%;
+    padding: 1%;
     border-radius: 5%;
     box-shadow: 0 3px 12px #000000;
 }
 /*Building photo styling */
 .building-photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 70%;
     height: auto;
     padding: 1%;
