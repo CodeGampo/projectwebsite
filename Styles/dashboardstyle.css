@@ -6,10 +6,12 @@
     display: flex;
     flex-direction: column;
 }
+
 /* Styling for semester sections */
 .semester {
     margin-top: 5%;
 }
+
 /* Table styling */
 table {
     width: 100%;
@@ -20,11 +22,14 @@ table {
     table-layout: fixed;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #000000;
 }
 
-th, td {
+th,
+td {
     padding: 1.5%;
     text-align: left;
 }
@@ -41,15 +46,17 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #c20000;
 }
-.completion-checkbox{
+
+.completion-checkbox {
     margin: auto;
     display: block;
     text-align: center;
     width: 75px;
     height: 75px;
 }
+
 /* Grade input styling */
-.grade-input{
+.grade-input {
     width: 150px;
     height: 75px;
     text-align: center;
@@ -59,6 +66,7 @@ tr:hover {
     margin: auto;
     display: block;
 }
+
 /* Progress bar styling */
 progress {
     width: 70%;
@@ -66,21 +74,25 @@ progress {
     display: block;
     margin: auto;
 }
+
 .progress-text {
     font-size: 2em;
     color: #007BFF;
     margin-top: 10px;
     text-align: center;
 }
+
 progress::-webkit-progress-bar {
     background-color: #f3f3f3;
     border-radius: 5px;
     box-shadow: inset 0 1px 2px #000000;
 }
+
 progress::-webkit-progress-value {
     background-color: #007BFF;
     border-radius: 5px;
 }
+
 progress::-moz-progress-bar {
     background-color: #007BFF;
     border-radius: 5px;

@@ -43,25 +43,52 @@ header {
     background-color: #b93131;
     color: #f4f4f4;
 }
-/* Navigation bar list items styling */
-.navigation-bar li {
-    display: inline;
-    padding: 10px;
-}
 /* Navigation bar logo styling and size */
 .nav-logo {
-    width: 20%;
+    width: 15%;
     height: auto;
 }
 /* Footer styling */
-.footer {
-    width: 100%;
-    text-align: left;
-}
 footer {
+    display: flex;
     position: fixed;
+    justify-content: flex-end;
     background-color: #13294b;
     color: #f4f4f4;
     bottom: 0;
     margin-top: 10%;
+    width: 100%;
+}
+/* Footer navigation styling */
+.footer-aside ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+/* Footer navigation links styling */
+}
+.footer-aside a {
+    color: #f4f4f4;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1em;
+}
+/* Footer navigation links hover effect */
+.footer-aside a:hover {
+    background-color: #b93131;
+}
+/* Author styling */
+author {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1em;
+}
+/* Git Hub Personal Account styling */
+.footer-aside-logo {
+    width: 4%;
+    height: auto;
 }
