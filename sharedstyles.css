@@ -1,0 +1,67 @@
+/* Header styling */
+header {
+    color: #13294b;
+    text-align: center;
+    font-size: 2em;
+}
+/* Navigation bar styling */
+.navigation-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #13294b;
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-bar ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* Navigation bar links styling */
+.navigation-bar a {
+    color: #f4f4f4;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+/* Navigation bar links hover effect */
+.navigation-bar a:hover {
+    background-color: #b93131;
+}
+/* Navigation bar active link styling */
+.navigation-bar a.active {
+    background-color: #b93131;
+    color: #f4f4f4;
+}
+/* Navigation bar list items styling */
+.navigation-bar li {
+    display: inline;
+    padding: 10px;
+}
+/* Navigation bar logo styling and size */
+.nav-logo {
+    width: 20%;
+    height: auto;
+}
+/* Footer styling */
+.footer {
+    width: 100%;
+    text-align: left;
+}
+footer {
+    position: fixed;
+    background-color: #13294b;
+    color: #f4f4f4;
+    bottom: 0;
+    margin-top: 10%;
+}
