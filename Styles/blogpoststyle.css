@@ -16,7 +16,6 @@ p {
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 2%;
-    margin-bottom: 2%;
 }
 /* Post-it scan styling */
 .postit {
