@@ -4,6 +4,7 @@ header {
     text-align: center;
     font-size: 2em;
 }
+
 /* Navigation bar styling */
 .navigation-bar {
     list-style-type: none;
@@ -13,12 +14,13 @@ header {
     background-color: #13294b;
     position: fixed;
     top: 0;
-    width: 100%; 
-    z-index: 1000; 
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .navigation-bar ul {
     display: flex;
     justify-content: space-around;
@@ -26,6 +28,7 @@ header {
     margin: 0;
     list-style: none;
 }
+
 /* Navigation bar links styling */
 .navigation-bar a {
     color: #f4f4f4;
@@ -34,20 +37,24 @@ header {
     text-align: center;
     padding: 14px 16px;
 }
+
 /* Navigation bar links hover effect */
 .navigation-bar a:hover {
     background-color: #b93131;
 }
+
 /* Navigation bar active link styling */
 .navigation-bar a.active {
     background-color: #b93131;
     color: #f4f4f4;
 }
+
 /* Navigation bar logo styling and size */
 .nav-logo {
     width: 15%;
     height: auto;
 }
+
 /* Footer styling */
 footer {
     display: flex;
@@ -59,6 +66,7 @@ footer {
     margin-top: 10%;
     width: 100%;
 }
+
 /* Footer navigation styling */
 .footer-aside ul {
     display: flex;
@@ -66,8 +74,9 @@ footer {
     padding: 0;
     margin: 0;
     list-style: none;
-/* Footer navigation links styling */
+    /* Footer navigation links styling */
 }
+
 .footer-aside a {
     color: #f4f4f4;
     text-decoration: none;
@@ -76,10 +85,12 @@ footer {
     padding: 14px 16px;
     font-size: 1em;
 }
+
 /* Footer navigation links hover effect */
 .footer-aside a:hover {
     background-color: #b93131;
 }
+
 /* Author styling */
 author {
     display: flex;
@@ -87,8 +98,11 @@ author {
     padding: 10px;
     font-size: 1em;
 }
-/* Git Hub Personal Account styling */
+
+/* Aside logo styling */
 .footer-aside-logo {
+    display: flex;
     width: 4%;
     height: auto;
+    align-items: center;
 }

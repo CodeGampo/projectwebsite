@@ -10,6 +10,7 @@ html, body, main {
     line-height: 1.6;
     font-size: 1.15em;
     padding-top: 5%;
+    margin-bottom: 3%;
 }
 img {
     max-width: 100%;

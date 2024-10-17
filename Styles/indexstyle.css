@@ -4,7 +4,7 @@
     margin: 0 auto 20px auto;
     padding: 10px 20px;
     background-color: #f6d693;
-    border-radius: 8%;
+    border-radius: 50px;
     box-shadow: 0 6px 12px #000000;
 }
 /*Profile photo styling */
@@ -13,7 +13,7 @@
     max-height: 55%;
     margin: auto;
     padding: 1%;
-    border-radius: 5%;
+    border-radius: 50px;
     box-shadow: 0 3px 12px #000000;
 }
 /*Building photo styling */
@@ -22,7 +22,7 @@
     width: 70%;
     height: auto;
     padding: 1%;
-    border-radius: 5%;
+    border-radius: 50px;
     box-shadow: 0 6px 12px #000000;
     
 }

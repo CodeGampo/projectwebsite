@@ -3,7 +3,7 @@
     margin: 3% auto;
     padding: 3%;
     background-color: #f6d693;
-    border-radius: 7.5%;
+    border-radius: 50px;
     box-shadow: 0 2px 6px #000000;
     text-align: left;
 }
@@ -45,6 +45,5 @@
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 7%;
     max-width: 100%;
 }
